@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Shop</title>
+    <style>
+        body {
+            background-color: #0077be;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: url('https://source.unsplash.com/1600x900/?surf') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+        }
+        .icons {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .icons button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #005f99;
+        }
+        .producto {
+            background-color: white;
+            color: black;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            width: 220px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .producto img {
+            width: 100%;
+            height: auto;
+            max-height: 180px;
+            border-radius: 5px;
+        }
+        .promo {
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .contacto, .historia, .atencion, .formulario {
+            background-color: #003f66;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .redes-sociales a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">¡Bienvenido a Surf Shop!
+        <div class="icons">
+            <button onclick="alert('Buscar productos...')">🔍</button>
+            <button onclick="alert('Carrito de compras')">🛒</button>
+        </div>
+    </div>
+    
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar productos...">
+    </div>
+    
+    <div class="productos">
+        <div class="producto"><img src="" alt="Tabla de Surf"><p>Tabla de Surf - $250</p></div>
+        <div class="producto"><img src="neopreno.jpeg" alt="Neopreno"><p>Neopreno - $180</p></div>
+        <div class="producto"><img src="lentes.jpeg" alt="Lentes de Sol"><p>Lentes de Sol - $50</p></div>
+        <div class="producto"><img src="camisetasurf.jpeg" alt="Camiseta Surf"><p>Camiseta  - $30</p></div>
+        <div class="producto"><img src="short billlabong.jpeg" alt="Short"><p>Short - $45</p></div>
+        <div class="producto"><img src="sandalias.jpeg" alt="Sandalias"><p>Sandalias - $20</p></div>
+        <div class="producto"><img src="gorrasurf.jpeg" alt="Gorra "><p>Gorra  - $25</p></div>
+        <div class="producto"><img src="sudadera.jpeg" alt="sudadera "><p>sudadera- $40</p></div>
+    </div>
+    
+    <div class="promo">¡Descuento del 20% en toda la tienda esta semana!</div>
+    <div class="promo">¡Compra 2 productos y llévate un accesorio gratis!</div>
+    <div class="promo">¡Envío gratis en compras superiores a $100!</div>
+    
+    <div class="historia">
+        <h2>Acerca de Nosotros</h2>
+        <p>Surf Shop es una tienda especializada en ropa y accesorios de surf. Con más de 10 años en el mercado, ofrecemos productos de la mejor calidad para surfistas de todos los niveles. Nuestra misión es llevar el espíritu del surf a cada rincón del mundo.</p>
+    </div>
+    
+    <div class="atencion">
+        <h2>Atención al Cliente</h2>
+        <p>¿Tienes algún problema o consulta? Contáctanos y estaremos encantados de ayudarte.</p>
+        <h3>Libro de Reclamaciones</h3>
+        <p>Si tienes alguna queja o sugerencia, por favor llena nuestro <a href="#">Libro de Reclamaciones</a>.</p>
+    </div>
+    
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +34 123 456 789</p>
+        <p>Email: info@surfshop.com</p>
+        <a href="mailto:info@surfshop.com">Enviar correo</a>
+    </div>
+    
+    <div class="redes-sociales">
+        <h2>Síguenos en Redes Sociales</h2>
+        <a href="#">📘 Facebook</a>
+        <a href="#">📷 Instagram</a>
+        <a href="#">🐦 Twitter</a>
+    </div>
+</body>
+</html>
